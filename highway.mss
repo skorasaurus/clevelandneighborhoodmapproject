@@ -4,25 +4,26 @@
 @trunk: #0f5fff;
 @primary: @trunk;
 @secondary: @trunk;
+@tertiary: #e1ff0f; 
 @road: #bbb;
 @track: @road;
-@footway: #faf600;
+@footway: #ffe26e;
 @cycleway: #69B;
 
- 
-/* to add tertiary at certain zoom levels. */
+/* color to use later, I like FFCC00 orange */
+/* e1ff0f; that's main roads for the Openstreets DC */
 
 /* ---- ROAD COLORS ---- */
 
 /* .highway.line { line-color: #f00; } debug */
 
 .highway[TYPE='motorway'] {
-  .line[zoom>=7]  { 
+  .line[zoom>=10]  { 
     line-color:spin(darken(@motorway,36),-10);
     line-cap:round;
     line-join:round;
   }
-  .fill[zoom>=10] {
+  .fill[zoom>=14] {
     line-color:@motorway;
     line-cap:round;
     line-join:round;
@@ -71,12 +72,12 @@
 }
 
 .highway[TYPE='secondary'] {
-  .line[zoom>=8] {
+  .line[zoom>=17] {
     line-color:spin(darken(@secondary,36),-10);
     line-cap:round;
     line-join:round;
   }
-  .fill[zoom>=12] {
+  .fill[zoom>=15] {
     line-color:@secondary;
     line-cap:round;
     line-join:round;
@@ -96,9 +97,19 @@
   }
 }
 
-/* .highway[TYPE='tertiary'] 
+.highway[TYPE='tertiary'] 
 .line 
-*/
+  .line[zoom>=12] {
+    line-color:@tertiary;
+    line-cap:round;
+    line-join:round;
+  }
+  .fill[zoom>=14] {
+    line-color:@secondary;
+    line-cap:round;
+    line-join:round;
+  }
+
  
 .highway[TYPE='living_street'],
 .highway[TYPE='residential'],
