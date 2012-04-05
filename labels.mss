@@ -262,8 +262,6 @@
 #area_label[type='golf_course'][zoom>=10],
 #area_label[type='park'][zoom>=10] {
   text-name: "''";
-  text-fill: @park * 0.6;
-  text-halo-fill: fadeout(@park,25%);
   text-halo-radius: 2;
   text-face-name:@sans;
   text-wrap-width:30;
@@ -303,124 +301,7 @@
   }
 }
 
-#area_label[type='cemetery'][zoom>=10] {
-  text-name: "''";
-  text-fill: @cemetery * 0.6;
-  text-halo-fill: fadeout(@cemetery,25%);
-  text-halo-radius: 2;
-  text-face-name:@sans;
-  text-wrap-width:30;
-  [zoom=10][area>102400000],
-  [zoom=11][area>25600000],
-  [zoom=13][area>1600000],
-  [zoom=14][area>320000],
-  [zoom=15][area>80000],
-  [zoom=16][area>20000],
-  [zoom=17][area>5000],
-  [zoom>=18][area>=0] {
-    text-name: "[name]";
-  }
-  [zoom=15][area>1600000],
-  [zoom=16][area>80000],
-  [zoom=17][area>20000],
-  [zoom>=18][area>5000] {
-    text-name: "[name]";
-    text-size: 12;
-    text-line-spacing: 2;
-    text-wrap-width: 60;
-  }
-  [zoom=16][area>1600000],
-  [zoom=17][area>80000],
-  [zoom>=18][area>20000] {
-    text-size: 14;
-    text-line-spacing: 4;
-    text-character-spacing: 1;
-    text-wrap-width: 120;
-  }
-  [zoom>=17][area>1600000],
-  [zoom>=18][area>80000] {
-    text-size: 16;
-    text-line-spacing: 6;
-    text-character-spacing: 2;
-    text-wrap-width: 180;
-  }
-}
 
-#area_label[type='hospital'][zoom>=10] {
-  text-name: "''";
-  text-fill: @hospital * 0.6;
-  text-halo-fill: fadeout(lighten(@hospital,10%),50%);
-  text-halo-radius: 2;
-  text-face-name:@sans;
-  text-wrap-width:30;
-  [zoom=14][area>320000],
-  [zoom=15][area>80000],
-  [zoom=16][area>20000],
-  [zoom=17][area>5000],
-  [zoom>=18][area>=0] {
-    text-name: "[name]";
-  }
-  [zoom=16][area>80000],
-  [zoom=17][area>20000],
-  [zoom>=18][area>5000] {
-    text-name: "[name]";
-    text-size: 12;
-    text-line-spacing: 2;
-    text-wrap-width: 60;
-  }
-  [zoom=17][area>80000],
-  [zoom>=18][area>20000] {
-    text-size: 14;
-    text-line-spacing: 4;
-    text-character-spacing: 1;
-    text-wrap-width: 120;
-  }
-  [zoom>=18][area>80000] {
-    text-size: 16;
-    text-line-spacing: 6;
-    text-character-spacing: 2;
-    text-wrap-width: 180;
-  }
-}
-
-#area_label[type='college'][zoom>=10],
-#area_label[type='school'][zoom>=10],
-#area_label[type='university'][zoom>=10] {
-  text-name: "''";
-  text-fill: @school * 0.6;
-  text-halo-fill: fadeout(lighten(@school,10%),50%);
-  text-halo-radius: 2;
-  text-face-name:@sans;
-  text-wrap-width:30;
-  [zoom=14][area>320000],
-  [zoom=15][area>80000],
-  [zoom=16][area>20000],
-  [zoom=17][area>5000],
-  [zoom>=18][area>=0] {
-    text-name: "[name]";
-  }
-  [zoom=16][area>80000],
-  [zoom=17][area>20000],
-  [zoom>=18][area>5000] {
-    text-name: "[name]";
-    text-size: 12;
-    text-line-spacing: 2;
-    text-wrap-width: 60;
-  }
-  [zoom=17][area>80000],
-  [zoom>=18][area>20000] {
-    text-size: 14;
-    text-line-spacing: 4;
-    text-character-spacing: 1;
-    text-wrap-width: 120;
-  }
-  [zoom>=18][area>80000] {
-    text-size: 16;
-    text-line-spacing: 6;
-    text-character-spacing: 2;
-    text-wrap-width: 180;
-  }
-}
 
 #area_label[type='water'][zoom>=10] {
   text-name: "''";
@@ -466,16 +347,7 @@
   }
 }
    
-#poi[type='university'][zoom>=15],
-#poi[type='hospital'][zoom>=16],
-#poi[type='school'][zoom>=17],
-#poi[type='library'][zoom>=17] {
-  text-name:"[name]";
-  text-face-name:@sans;
-  text-size:10;
-  text-wrap-width:30;
-  text-fill: @poi_text;
-}
+
 
 
 /* ================================================================== */

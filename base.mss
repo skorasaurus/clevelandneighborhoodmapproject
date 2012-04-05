@@ -20,67 +20,12 @@
 #landuse_gen0[zoom>3][zoom<=9],
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
-  [type='college']       { polygon-fill: @school; }
-  [type='commercial']    { polygon-fill: @industrial; }
-  [type='forest']        { polygon-fill: @wooded; }
-  [type='golf_course']   { polygon-fill: @park; }
-  [type='grass']         { polygon-fill: @park; }
-  [type='hospital']      { polygon-fill: @hospital; }
-  [type='industrial']    { polygon-fill: @industrial; }
-  [type='park']          { polygon-fill: @park; }
-  [type='parking']       { polygon-fill: @parking; }
+
+[type='parking']       { polygon-fill: @parking; }
   [type='pedestrian']    { polygon-fill: @pedestrian_fill; }
-  [type='pitch']         { polygon-fill: @sports; }
-  [type='residential']   { polygon-fill: @residential; }
-  [type='school']        { polygon-fill: @school; }
-  [type='sports_center'] { polygon-fill: @sports; }
-  [type='stadium']       { polygon-fill: @sports; }
-  [type='university']    { polygon-fill: @school; }
-  [type='wood']          { polygon-fill: @wooded; }
 }
 
-#landuse_overlays[type='nature_reserve'][zoom>6] {
-  line-color: darken(@wooded,25%);
-  line-opacity:  0.3;
-  line-dasharray: 1,1;
-  polygon-fill: darken(@wooded,25%);
-  polygon-opacity: 0.1;
-  [zoom=7] { line-width: 0.4; }
-  [zoom=8] { line-width: 0.6; }
-  [zoom=9] { line-width: 0.8; }
-  [zoom=10] { line-width: 1.0; }
-  [zoom=11] { line-width: 1.5; }
-  [zoom>=12] { line-width: 2.0; }
-}
  
-#landuse_overlays[type='wetland'][zoom>11] {
-  [zoom>11][zoom<=14] { polygon-pattern-file:url(img/swamp-16.png); }
-  [zoom>14] { polygon-pattern-file:url(img/swamp-32.png);}
-  }
-
-/* ---- BUILDINGS ---- */
-#buildings[zoom>10][zoom<=16] {
-  polygon-fill:@building;
-  [zoom>13] {
-    line-color:darken(@building,5);
-    line-width:0.2;
-  }
-  [zoom>15] {
-    line-color:darken(@building,10);
-    line-width:0.4;
-  }
-}
-/* At the highest zoom levels, render buildings in fancy pseudo-3D */
-#buildings[zoom>=17][type != 'hedge'] {
-  building-fill:@building;
-  building-height:1.25;
-}
-
-#buildings[zoom>=17][type = 'hedge'] {
-  building-fill:@wooded;
-  building-height:1.25;
-}
-
 /* ================================================================== */
 /* WATER AREAS
 /* ================================================================== */

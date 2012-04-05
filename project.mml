@@ -610,20 +610,6 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
       "status": "on"
-    },
-    {
-      "geometry": "polygon",
-      "id": "clubs",
-      "class": "",
-      "Datasource": {
-        "file": "/media/gofer/DUMP/splits/CUY PARCELS WITH PROPERTY DATA_LUC__4310.shp",
-        "id": "clubs",
-        "project": "osm-bright-4",
-        "srs": null
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "name": "clubs"
     }
   ],
   "attribution": "Data © OpenStreetMap (and) contributors, CC-BY-SA",
