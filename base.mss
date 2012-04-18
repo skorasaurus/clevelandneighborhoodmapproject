@@ -21,8 +21,7 @@
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
 
-[type='parking']       { polygon-fill: @parking; }
-  [type='pedestrian']    { polygon-fill: @pedestrian_fill; }
+[type='pedestrian']    { polygon-fill: @pedestrian_fill; }
 }
 
  

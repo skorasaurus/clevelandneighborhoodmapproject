@@ -40,7 +40,6 @@ Map { font-directory: url(./fonts); }
 @water:             #C4DFF6;
 @agriculture:       #F2E8B6;
 @sports:            #B8E6B8;
-@parking:           #ededed;
 
 /* ================================================================== */
 /* ROAD COLORS
