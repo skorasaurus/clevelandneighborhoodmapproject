@@ -119,8 +119,6 @@ Map { font-directory: url(./fonts); }
 @road_text:         #777;
 @road_halo:         #fff;
 
-@other_text:        #888;
-@other_halo:        @place_halo;
 
 @locality_text:     #aaa;
 @locality_halo:     @land;
@@ -131,13 +129,10 @@ Map { font-directory: url(./fonts); }
 
 /* ****************************************************************** */
 
-
-
-
-
-#clubs {
+#nhb {
   line-color:#f98800;
   line-width:0.5;
-  polygon-opacity:1;
+  polygon-opacity:.35;
+  raster-mode: screen; 
   polygon-fill:#f98800;
 }
