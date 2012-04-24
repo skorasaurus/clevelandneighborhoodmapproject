@@ -114,10 +114,8 @@ Map { font-directory: url(./fonts); }
 @town_text:         #666;
 @town_halo:         @place_halo;
 
-@poi_text:          @poi_text;  
 
-@road_text:         #777;
-@road_halo:         #fff;
+
 
 
 @locality_text:     #aaa;
@@ -130,8 +128,8 @@ Map { font-directory: url(./fonts); }
 /* ****************************************************************** */
 
 #nhb {
-  line-color:#f98800;
-  line-width:0.5;
+  line-color:#FCA432;
+  line-width:2.5;
   polygon-opacity:.35;
   raster-mode: screen; 
   polygon-fill:#f98800;
