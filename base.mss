@@ -112,6 +112,34 @@ Map { background-color: @water; }
   [zoom=4] { line-opacity: 0.4; }
 }
 
+#nhb {
+  line-color:#FCA432;
+  line-width:2.5;
+  polygon-opacity:.35;
+  raster-mode: screen; 
+  polygon-fill:#f98800;
+}
+
+/* the 3 blues that I had used: DEEBF7 9ECAE1 3182BD */
+
+#nhb [neighborhood='hough'], 
+#nhb [neighborhood='svd']
+{
+  polygon-opacity:.35;
+  raster-mode: screen; 
+  polygon-fill:#668BD6;
+}
+
+#nhb [neighborhood='obk'], 
+#nhb [neighborhood='tre']
+{
+  polygon-opacity:.35;
+  raster-mode: screen; 
+  polygon-fill:#9ECAE1;
+}
+
+
+
 
 
 /* ================================================================== */

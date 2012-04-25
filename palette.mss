@@ -115,7 +115,6 @@ Map { font-directory: url(./fonts); }
 @town_halo:         @place_halo;
 
 
-
 @locality_text:     #aaa;
 @locality_halo:     @land;
 
@@ -126,10 +125,5 @@ Map { font-directory: url(./fonts); }
 /* ****************************************************************** */
 
 
-#nhb {
-  line-color:#FCA432;
-  line-width:2.5;
-  polygon-opacity:.35;
-  raster-mode: screen; 
-  polygon-fill:#f98800;
-}
+
+
