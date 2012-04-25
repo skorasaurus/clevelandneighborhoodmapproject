@@ -256,7 +256,7 @@
         "id": "admin",
         "key_field": "",
         "password": "yessem",
-        "project": "clevelandneighborhoodmapproject-bk",
+        "project": "clevelandneighborhoodmapproject",
         "table": "( SELECT way, admin_level\n  FROM planet_osm_line\n  WHERE boundary = 'administrative'\n) AS data",
         "type": "postgis",
         "user": "skorasaurus",

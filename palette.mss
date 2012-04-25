@@ -116,8 +116,6 @@ Map { font-directory: url(./fonts); }
 
 
 
-
-
 @locality_text:     #aaa;
 @locality_halo:     @land;
 
@@ -126,6 +124,7 @@ Map { font-directory: url(./fonts); }
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */
+
 
 #nhb {
   line-color:#FCA432;
