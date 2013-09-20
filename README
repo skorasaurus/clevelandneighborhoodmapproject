@@ -3,3 +3,24 @@
 2012.04.01 
 
 - complete re-write, based on osm-bright for the moment. 
+
+
+2013.09 - (date is redundant b/c of git...)
+TODO: 
+
+re-write. 
+features/pseudo-plans:
+no one-way symbols
+no service=driveway service=parking aisle. 
+no service ways w/in cemeteries. 
+street names, yea or nea ? 
+
+railroads, kept to a minimal (simplify service=yard) 
+- NO railway=abandoned or disused 
+
+- 
+
+ramblings/crackpot ideas: 
+use a darker color for the background ? (charcoal?)
+
+
